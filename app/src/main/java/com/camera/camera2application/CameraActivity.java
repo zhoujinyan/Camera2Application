@@ -101,16 +101,16 @@ public class CameraActivity extends Activity {
         mCameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
         //后置摄像头
 
-        if (txtView.isAvailable()) {
-            openCamera(txtView.getWidth(), txtView.getHeight(), mCameraId);
-        } else {
-            txtView.setSurfaceTextureListener(textureListener);
-        }
-        if (txtFrontView.isAvailable()) {
-            openCamera(txtFrontView.getWidth(), txtFrontView.getHeight(), mCameraFrontId);
-        } else {
-            txtFrontView.setSurfaceTextureListener(textureFrontListener);
-        }
+//        if (txtView.isAvailable()) {
+//            openCamera(txtView.getWidth(), txtView.getHeight(), mCameraId);
+//        } else {
+//            txtView.setSurfaceTextureListener(textureListener);
+//        }
+//        if (txtFrontView.isAvailable()) {
+//            openCamera(txtFrontView.getWidth(), txtFrontView.getHeight(), mCameraFrontId);
+//        } else {
+//            txtFrontView.setSurfaceTextureListener(textureFrontListener);
+//        }
     }
     /**
      * Closes the current {@link CameraDevice}.
