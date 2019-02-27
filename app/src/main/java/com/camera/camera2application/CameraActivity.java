@@ -94,23 +94,10 @@ public class CameraActivity extends Activity {
     }
 
     private void initView() {
-        closeCamera();
         txtView = (TextureView)findViewById(R.id.camera_texture_view);
         txtFrontView = (TextureView)findViewById(R.id.camera_front_texture_view);
         // 获取CameraManager 相机设备管理器
         mCameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
-        //后置摄像头
-
-//        if (txtView.isAvailable()) {
-//            openCamera(txtView.getWidth(), txtView.getHeight(), mCameraId);
-//        } else {
-//            txtView.setSurfaceTextureListener(textureListener);
-//        }
-//        if (txtFrontView.isAvailable()) {
-//            openCamera(txtFrontView.getWidth(), txtFrontView.getHeight(), mCameraFrontId);
-//        } else {
-//            txtFrontView.setSurfaceTextureListener(textureFrontListener);
-//        }
     }
     /**
      * Closes the current {@link CameraDevice}.
