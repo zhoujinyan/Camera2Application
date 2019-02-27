@@ -17,7 +17,6 @@
         android:id="@+id/camera_front_texture_view"
         android:layout_width="400dp"
         android:layout_height="350dp"
-        android:visibility="invisible"
         android:layout_gravity="bottom|center"/>
 
 
